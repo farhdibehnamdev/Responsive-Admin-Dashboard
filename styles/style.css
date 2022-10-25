@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dceleb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 02rem 3rem var(--color-light);
+}
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-background);
+  min-height: 100vh;
+}
+
+.container__sidebar {
+  background-color: #ffbb55;
+  width: 20rem;
+  padding: 1rem 1rem 0 1rem;
+  color: var(--color-dark-variant);
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 7rem);
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.sidebar__logo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.logo__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo__text--black {
+  color: var(--color-dark);
+}
+
+.logo__text--red {
+  color: var(--color-danger);
+}
+
+.menu__items {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.menu__items--linkName {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 1.6rem 0;
+}
+
+.menu__items--linkName span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.menu__items--linkName.active {
+  padding: 1.3rem 1.3rem 1.3rem 0;
+  background-color: var(--color-light);
+  position: relative;
+  color: var(--color-primary);
+}
+
+.menu__items--linkName.active a {
+  color: var(--color-primary);
+}
+
+.menu__items--linkName.active:before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  height: 100%;
+  width: 0.5rem;
+  color: red;
+}
+
+.menu__items--linkName a {
+  text-decoration: none;
+  color: var(--color-dark-variant);
+}
+
+.logout li {
+  margin-top: auto;
+}
+
+/* #### Dashboard Section #### */
+
+.container__dashboard {
+  padding: 1rem;
+  background-color: #ff7782;
+  position: relative;
+  left: 20rem;
+  width: calc(100% - 20rem);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
