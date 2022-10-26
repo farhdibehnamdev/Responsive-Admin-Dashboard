@@ -26,7 +26,7 @@
   --card-padding: 1.8rem;
   --padding-1: 1.2rem;
 
-  --box-shadow: 02rem 3rem var(--color-light);
+  --box-shadow: 0.2rem 0.3rem var(--color-light);
 }
 body {
   font-size: 62.5%;
@@ -223,4 +223,76 @@ body {
 
 .dashboard {
   margin-top: 4.5rem;
+}
+
+.calendar__date {
+  border-radius: var(--border-radius-1);
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  background-color: var(--color-light);
+  border: none;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* #### Cards Section #### */
+
+.dashboard__cards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dashboard__cards .card {
+  padding: 1rem;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+.card__info > * {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+.card__info__icon i {
+  border-radius: 50%;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  color: var(--color-background);
+}
+
+.cards__totalSales .card__info__icon i {
+  background-color: var(--color-primary);
+}
+.cards__totalExpenses .card__info__icon i {
+  background-color: var(--color-danger);
+}
+.cards__totalIncome .card__info__icon i {
+  background-color: var(--color-success);
+}
+
+.card__info__text {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card__info__price {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.card__info__last24Hours {
+  font-size: 0.6rem;
+  color: var(--color-info-dark);
+  letter-spacing: 1px;
+}
+
+.card__pieChart {
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  padding: 3rem;
 }
