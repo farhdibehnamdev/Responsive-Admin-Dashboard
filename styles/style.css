@@ -222,6 +222,8 @@ body {
 }
 
 .dashboard {
+  display: flex;
+  flex-direction: column;
   margin-top: 4.5rem;
 }
 
@@ -240,6 +242,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card {
@@ -295,4 +298,13 @@ body {
   border-radius: 50%;
   background-color: var(--color-primary);
   padding: 3rem;
+}
+
+/* #### Table Section #### */
+
+.table__title {
+  margin-bottom: 1rem;
+}
+.table {
+  background-color: var(--color-light);
 }
