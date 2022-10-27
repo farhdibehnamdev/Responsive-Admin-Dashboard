@@ -139,57 +139,114 @@
           </div>
           <div class="dashboard__cards">
             <div class="card cards__totalSales">
-              <div class="card__info">
-                <div class="card__info__icon">
-                  <i class="uil uil-chart"></i>
+              <div>
+                <div class="card__info">
+                  <div class="card__info__icon">
+                    <i class="uil uil-chart"></i>
+                  </div>
+                  <p class="card__info__text">Total Sales</p>
+                  <p class="card__info__price">$25,024</p>
+                  <p class="card__info__last24Hours">Last 24 Hours</p>
                 </div>
-                <p class="card__info__text">Total Sales</p>
-                <p class="card__info__price">$25,024</p>
-                <p class="card__info__last24Hours">Last 24 Hours</p>
+                <div class="card__pieChart"></div>
               </div>
-              <div class="card__pieChart"></div>
             </div>
             <div class="card cards__totalExpenses">
-              <div class="card__info">
-                <div class="card__info__icon">
-                  <i class="uil uil-chart-bar"></i>
+              <div>
+                <div class="card__info">
+                  <div class="card__info__icon">
+                    <i class="uil uil-chart-bar"></i>
+                  </div>
+                  <p class="card__info__text">Total Expenses</p>
+                  <p class="card__info__price">$14,160</p>
+                  <p class="card__info__last24Hours">Last 24 Hours</p>
                 </div>
-                <p class="card__info__text">Total Expenses</p>
-                <p class="card__info__price">$14,160</p>
-                <p class="card__info__last24Hours">Last 24 Hours</p>
+                <div class="card__pieChart"></div>
               </div>
-              <div class="card__pieChart"></div>
             </div>
             <div class="card cards__totalIncome">
-              <div class="card__info">
-                <div class="card__info__icon">
-                  <i class="uil uil-chart-line"></i>
+              <div>
+                <div class="card__info">
+                  <div class="card__info__icon">
+                    <i class="uil uil-chart-line"></i>
+                  </div>
+                  <p class="card__info__text">Total Income</p>
+                  <p class="card__info__price">$10,864</p>
+                  <p class="card__info__last24Hours">Last 24 Hours</p>
                 </div>
-                <p class="card__info__text">Total Income</p>
-                <p class="card__info__price">$10,864</p>
-                <p class="card__info__last24Hours">Last 24 Hours</p>
+                <div class="card__pieChart"></div>
               </div>
-              <div class="card__pieChart"></div>
             </div>
           </div>
+          <h2 class="table__title">Recent Orders</h2>
+
           <div class="dashboard__table">
-            <h2 class="table__title">Recent Orders</h2>
             <table class="table">
-              <thead>
+              <thead class="center">
                 <tr>
-                  <th>Product Name</th>
+                  <th>Name</th>
                   <th>Product Number</th>
                   <th>Payment</th>
                   <th>Status</th>
                   <th></th>
                 </tr>
               </thead>
-              <tbody>
-                <tr></tr>
+              <tbody class="center">
+                <tr>
+                  <td>Dai Chan</td>
+                  <td>5464</td>
+                  <td>Due</td>
+                  <td class="pending">Pending</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td>Jemima Bernard</td>
+                  <td>2612</td>
+                  <td>Refunded</td>
+                  <td class="declined">Declined</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td>Maxine Larsen</td>
+                  <td>1170</td>
+                  <td>Paid</td>
+                  <td class="pending">Pending</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td>Edward Francis</td>
+                  <td>1754</td>
+                  <td>Paid</td>
+                  <td class="pending">Pending</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td>Allen Aguilar</td>
+                  <td>2915</td>
+                  <td>Due</td>
+                  <td>Delivered</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td>Allen Aguilar</td>
+                  <td>2915</td>
+                  <td>Paid</td>
+                  <td>Delivered</td>
+                  <td>Details</td>
+                </tr>
+                <tr>
+                  <td>Allen Aguilar</td>
+                  <td>2915</td>
+                  <td>Due</td>
+                  <td>Delivered</td>
+                  <td>Details</td>
+                </tr>
               </tbody>
             </table>
           </div>
         </section>
+        <button class="dashboard__table__showAll">Show All</button>
+
         <aside class="container__recentUpdates"></aside>
       </div>
     </div>
