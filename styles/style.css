@@ -212,19 +212,20 @@ body {
 
 .container__dashboard {
   padding: 1rem;
-  /* background-color: #ff7782; */
   position: relative;
   left: 20rem;
   width: calc(100% - 20rem);
   display: flex;
-  flex-direction: column;
   height: 100vh;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .dashboard {
   display: flex;
   flex-direction: column;
   margin-top: 4.5rem;
+  flex: 1 1 auto;
 }
 
 .calendar__date {
@@ -243,26 +244,26 @@ body {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 .card {
-  flex: 1 1 auto;
-}
-.card div {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .card__info {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 .dashboard__cards .card {
-  padding: 1rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
   background-color: var(--color-white);
   border-radius: 1rem;
-  /* box-shadow: var(--box-shadow); */
+  box-shadow: var(--box-shadow);
   box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
+  flex: 1 1 auto;
 }
 .card__info > * {
   margin-bottom: 1.2rem;
@@ -314,12 +315,12 @@ body {
   /* box-shadow: var(--box-shadow); */
   box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
   background-color: var(--color-white);
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 2.2rem 2rem 3rem 2rem;
 }
 
 .table__title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .table {
@@ -333,8 +334,13 @@ tbody.center {
   text-align: center;
 }
 
+thead tr th {
+  font-size: 1.1rem;
+  padding-bottom: 0.7rem;
+}
+
 table.table tbody tr:not(:last-child) {
-  border-bottom: 1px solid var(--color-dark-variant);
+  border-bottom: 1px solid #f0eeee;
 }
 
 table.table tbody tr td {
@@ -362,5 +368,105 @@ table.table td.declined {
   font-weight: 700;
   cursor: pointer;
 }
+.dashboard__wrapper {
+  flex: 1 1 auto;
+  width: calc(100% - 2rem);
+}
 
 /* #### Right Sidebar Section #### */
+.container__rightSidebar {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSidebar__recentUpdates {
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.recentUpdates__items__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  list-style: none;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.recentUpdates__items__item img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.items__item__info p {
+  margin-top: 0.5rem;
+  color: #7d8da1;
+}
+
+.item__info__name {
+  font-weight: 700;
+}
+.salesAnalytics__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 1rem;
+  background-color: var(--color-white);
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.salesAnalytics__item_icon {
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.salesAnalytics__item_icon--blueColor {
+  background-color: var(--color-primary);
+}
+
+.salesAnalytics__item_icon--redColor {
+  background-color: var(--color-danger);
+}
+
+.salesAnalytics__item_icon--greenColor {
+  background-color: var(--color-success);
+}
+
+.salesAnalytics__item_icon i {
+  color: var(--color-white);
+}
+.salesAnalytics__item__status {
+  font-size: 0.8rem;
+}
+.item__status--orders {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.item__status__last24Hours {
+  font-size: 0.7rem;
+  color: #7d8da1;
+}
+
+.salesAnalytics__item--percentPositive {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-success);
+}
+.salesAnalytics__item--percentNegative {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-danger);
+}
+
+.salesAnalytics__item__counts {
+  font-size: 0.9rem;
+  font-weight: 700;
+}

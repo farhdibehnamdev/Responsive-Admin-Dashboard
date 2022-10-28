@@ -131,6 +131,7 @@
             </div>
           </div>
         </header>
+        <!-- <div class="dashboard__wrapper"> -->
         <section class="dashboard">
           <div class="dashboard__calendar">
             <form>
@@ -139,43 +140,37 @@
           </div>
           <div class="dashboard__cards">
             <div class="card cards__totalSales">
-              <div>
-                <div class="card__info">
-                  <div class="card__info__icon">
-                    <i class="uil uil-chart"></i>
-                  </div>
-                  <p class="card__info__text">Total Sales</p>
-                  <p class="card__info__price">$25,024</p>
-                  <p class="card__info__last24Hours">Last 24 Hours</p>
+              <div class="card__info">
+                <div class="card__info__icon">
+                  <i class="uil uil-chart"></i>
                 </div>
-                <div class="card__pieChart"></div>
+                <p class="card__info__text">Total Sales</p>
+                <p class="card__info__price">$25,024</p>
+                <p class="card__info__last24Hours">Last 24 Hours</p>
               </div>
+              <div class="card__pieChart"></div>
             </div>
             <div class="card cards__totalExpenses">
-              <div>
-                <div class="card__info">
-                  <div class="card__info__icon">
-                    <i class="uil uil-chart-bar"></i>
-                  </div>
-                  <p class="card__info__text">Total Expenses</p>
-                  <p class="card__info__price">$14,160</p>
-                  <p class="card__info__last24Hours">Last 24 Hours</p>
+              <div class="card__info">
+                <div class="card__info__icon">
+                  <i class="uil uil-chart-bar"></i>
                 </div>
-                <div class="card__pieChart"></div>
+                <p class="card__info__text">Total Expenses</p>
+                <p class="card__info__price">$14,160</p>
+                <p class="card__info__last24Hours">Last 24 Hours</p>
               </div>
+              <div class="card__pieChart"></div>
             </div>
             <div class="card cards__totalIncome">
-              <div>
-                <div class="card__info">
-                  <div class="card__info__icon">
-                    <i class="uil uil-chart-line"></i>
-                  </div>
-                  <p class="card__info__text">Total Income</p>
-                  <p class="card__info__price">$10,864</p>
-                  <p class="card__info__last24Hours">Last 24 Hours</p>
+              <div class="card__info">
+                <div class="card__info__icon">
+                  <i class="uil uil-chart-line"></i>
                 </div>
-                <div class="card__pieChart"></div>
+                <p class="card__info__text">Total Income</p>
+                <p class="card__info__price">$10,864</p>
+                <p class="card__info__last24Hours">Last 24 Hours</p>
               </div>
+              <div class="card__pieChart"></div>
             </div>
           </div>
           <h2 class="table__title">Recent Orders</h2>
@@ -244,10 +239,86 @@
               </tbody>
             </table>
           </div>
+          <button class="dashboard__table__showAll">Show All</button>
         </section>
-        <button class="dashboard__table__showAll">Show All</button>
+        <!-- </div> -->
+        <aside class="container__rightSidebar">
+          <h2 class="table__title">Recent Updates</h2>
 
-        <aside class="container__recentUpdates"></aside>
+          <div class="rightSidebar__recentUpdates">
+            <ul class="recentUpdates__items">
+              <li class="recentUpdates__items__item">
+                <img src="./images/profile-1.jpg" alt="" />
+                <span class="items__item__info">
+                  <span class="item__info__name">Mike Tyson</span>
+                  <span> recived his order of Night lion tech GPS drone.</span>
+                  <p>2 Minutes Ago</p>
+                </span>
+              </li>
+              <li class="recentUpdates__items__item">
+                <img src="./images/profile-3.jpg" alt="" />
+                <span class="items__item__info">
+                  <span class="item__info__name">Diana Ayi</span>
+                  <span> recived his order of Night lion tech GPS drone.</span>
+                  <p>4 Minutes Ago</p>
+                </span>
+              </li>
+              <li class="recentUpdates__items__item">
+                <img src="./images/profile-4.jpg" alt="" />
+                <span class="items__item__info">
+                  <span class="item__info__name">Mandy Roy</span>
+                  <span> recived his order of Night lion tech GPS drone.</span>
+                  <p>6 Minutes Ago</p>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <h2 class="table__title">Sales Analytics</h2>
+          <div class="rightSidebar__salesAnalytics">
+            <div class="salesAnalytics__item">
+              <div
+                class="salesAnalytics__item_icon salesAnalytics__item_icon--blueColor"
+              >
+                <i class="uil uil-store"></i>
+              </div>
+              <div class="salesAnalytics__item__status">
+                <p class="item__status--orders">ONLINE ORDERS</p>
+                <p class="item__status__last24Hours">Last 24 Hours</p>
+              </div>
+              <span class="salesAnalytics__item--percentPositive">+39%</span>
+              <span class="salesAnalytics__item__counts">3849</span>
+            </div>
+            <div class="salesAnalytics__item">
+              <div
+                class="salesAnalytics__item_icon salesAnalytics__item_icon--redColor"
+              >
+                <i class="uil uil-shopping-basket"></i>
+              </div>
+              <div class="salesAnalytics__item__status">
+                <p class="item__status--orders">OFFLINE ORDERS</p>
+                <p class="item__status__last24Hours">Last 24 Hours</p>
+              </div>
+              <span class="salesAnalytics__item--percentNegative">-17%</span>
+              <span class="salesAnalytics__item__counts">1100</span>
+            </div>
+            <div class="salesAnalytics__item">
+              <div
+                class="salesAnalytics__item_icon salesAnalytics__item_icon--greenColor"
+              >
+                <i class="uil uil-user"></i>
+              </div>
+              <div class="salesAnalytics__item__status">
+                <p class="item__status--orders">NEW CUSTOMER</p>
+                <p class="item__status__last24Hours">Last 24 Hours</p>
+              </div>
+              <span class="salesAnalytics__item--percentPositive">+26%</span>
+              <span class="salesAnalytics__item__counts">849</span>
+            </div>
+            <div class="salesAnalytics__item">
+              <span>+ Add Product</span>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
     <script src="./script/script.js"></script>
