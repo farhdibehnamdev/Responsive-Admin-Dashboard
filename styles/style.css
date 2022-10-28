@@ -470,3 +470,15 @@ table.table td.declined {
   font-size: 0.9rem;
   font-weight: 700;
 }
+.salesAnalytics__addItem {
+  border: 2px dashed var(--color-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
