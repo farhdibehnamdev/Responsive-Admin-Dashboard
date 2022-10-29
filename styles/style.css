@@ -127,11 +127,11 @@ body {
 
 /* #### Header Section #### */
 .header {
-  position: fixed;
-  width: calc(100% - 18.4rem);
+  position: relative;
+  width: calc(100% - 1rem);
   top: 0;
-  left: 18.4rem;
-  padding: 1rem;
+  left: -1rem;
+  /* padding: 1rem; */
 }
 
 .header__contentWrapper {
@@ -224,7 +224,7 @@ body {
 .dashboard {
   display: flex;
   flex-direction: column;
-  margin-top: 4.5rem;
+  /* margin-top: 4.5rem; */
   flex: 1 1 auto;
 }
 
@@ -371,7 +371,7 @@ body {
 .table {
   font-size: 1.3rem;
   border-radius: 1rem;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   width: 100%;
 }
 thead.center,
@@ -385,10 +385,13 @@ thead tr th {
 }
 
 table.table tbody tr:not(:last-child) {
-  border-bottom: 1px solid #f0eeee;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
 }
 
 table.table tbody tr td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
   padding: 10px;
   font-size: 1.2rem;
   color: var(--color-info-dark);
@@ -420,7 +423,7 @@ table.table td.declined {
 
 /* #### Right Sidebar Section #### */
 .container__rightSidebar {
-  margin-top: 5.5rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
 }
