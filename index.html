@@ -109,7 +109,7 @@
             <div class="header__hamburgerMenu hidden">
               <span class="material-icons"> menu </span>
             </div>
-            <h2 class="header_title">Dashboard</h2>
+            <h2 class="header_title textTitle">Dashboard</h2>
             <div class="header__profile">
               <div class="button__toggleTheme">
                 <button
@@ -124,7 +124,8 @@
                 </button>
               </div>
               <div class="header__userName">
-                <span>Hey, </span><span class="header__name">Daniel</span>
+                <span class="header__hey">Hey, </span
+                ><span class="header__name">Daniel</span>
                 <p class="header__userRole">Admin</p>
               </div>
               <img src="./images/profile.jpg" alt="profile image" />
@@ -144,36 +145,63 @@
                 <div class="card__info__icon">
                   <i class="uil uil-chart"></i>
                 </div>
-                <p class="card__info__text">Total Sales</p>
-                <p class="card__info__price">$25,024</p>
+                <div class="card__info__chart">
+                  <div class="card__info__chart__data">
+                    <p class="card__info__text">Total Sales</p>
+                    <p class="card__info__price">$25,024</p>
+                  </div>
+                  <div class="card__pieChart card__pieChart--sales">
+                    <svg><circle cx="50" cy="50" r="40"></circle></svg>
+                    <div class="number">
+                      <p>81%</p>
+                    </div>
+                  </div>
+                </div>
                 <p class="card__info__last24Hours">Last 24 Hours</p>
               </div>
-              <div class="card__pieChart"></div>
             </div>
             <div class="card cards__totalExpenses">
               <div class="card__info">
                 <div class="card__info__icon">
                   <i class="uil uil-chart-bar"></i>
                 </div>
-                <p class="card__info__text">Total Expenses</p>
-                <p class="card__info__price">$14,160</p>
+                <div class="card__info__chart">
+                  <div class="card__info__chart__data">
+                    <p class="card__info__text">Total Expenses</p>
+                    <p class="card__info__price">$14,160</p>
+                  </div>
+                  <div class="card__pieChart card__pieChart--sales">
+                    <svg><circle cx="50" cy="50" r="40"></circle></svg>
+                    <div class="number">
+                      <p>62%</p>
+                    </div>
+                  </div>
+                </div>
                 <p class="card__info__last24Hours">Last 24 Hours</p>
               </div>
-              <div class="card__pieChart"></div>
             </div>
             <div class="card cards__totalIncome">
               <div class="card__info">
                 <div class="card__info__icon">
                   <i class="uil uil-chart-line"></i>
                 </div>
-                <p class="card__info__text">Total Income</p>
-                <p class="card__info__price">$10,864</p>
+                <div class="card__info__chart">
+                  <div class="card__info__chart__data">
+                    <p class="card__info__text">Total Income</p>
+                    <p class="card__info__price">$10,864</p>
+                  </div>
+                  <div class="card__pieChart card__pieChart--sales">
+                    <svg><circle cx="50" cy="50" r="40"></circle></svg>
+                    <div class="number">
+                      <p>44%</p>
+                    </div>
+                  </div>
+                </div>
                 <p class="card__info__last24Hours">Last 24 Hours</p>
               </div>
-              <div class="card__pieChart"></div>
             </div>
           </div>
-          <h2 class="table__title">Recent Orders</h2>
+          <h2 class="table__title textTitle">Recent Orders</h2>
 
           <div class="dashboard__table">
             <table class="table">
@@ -243,7 +271,7 @@
         </section>
         <!-- </div> -->
         <aside class="container__rightSidebar">
-          <h2 class="table__title">Recent Updates</h2>
+          <h2 class="table__title textTitle">Recent Updates</h2>
 
           <div class="rightSidebar__recentUpdates">
             <ul class="recentUpdates__items">
@@ -251,7 +279,9 @@
                 <img src="./images/profile-1.jpg" alt="" />
                 <span class="items__item__info">
                   <span class="item__info__name">Mike Tyson</span>
-                  <span> recived his order of Night lion tech GPS drone.</span>
+                  <span class="item__info__desc">
+                    recived his order of Night lion tech GPS drone.</span
+                  >
                   <p>2 Minutes Ago</p>
                 </span>
               </li>
@@ -259,7 +289,9 @@
                 <img src="./images/profile-3.jpg" alt="" />
                 <span class="items__item__info">
                   <span class="item__info__name">Diana Ayi</span>
-                  <span> recived his order of Night lion tech GPS drone.</span>
+                  <span class="item__info__desc">
+                    recived his order of Night lion tech GPS drone.</span
+                  >
                   <p>4 Minutes Ago</p>
                 </span>
               </li>
@@ -267,13 +299,15 @@
                 <img src="./images/profile-4.jpg" alt="" />
                 <span class="items__item__info">
                   <span class="item__info__name">Mandy Roy</span>
-                  <span> recived his order of Night lion tech GPS drone.</span>
+                  <span class="item__info__desc">
+                    recived his order of Night lion tech GPS drone.</span
+                  >
                   <p>6 Minutes Ago</p>
                 </span>
               </li>
             </ul>
           </div>
-          <h2 class="table__title">Sales Analytics</h2>
+          <h2 class="table__title textTitle">Sales Analytics</h2>
           <div class="rightSidebar__salesAnalytics">
             <div class="salesAnalytics__item">
               <div
