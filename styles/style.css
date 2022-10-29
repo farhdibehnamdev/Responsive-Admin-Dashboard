@@ -131,6 +131,7 @@ body {
   width: calc(100% - 1rem);
   top: 0;
   left: -1rem;
+  z-index: 9999999;
   /* padding: 1rem; */
 }
 
@@ -165,7 +166,9 @@ body {
 .header__name {
   font-weight: 700;
 }
-
+.header__hamburgerMenu i {
+  font-size: 1.5rem;
+}
 .header__hamburgerMenu.hidden {
   visibility: hidden;
 }
@@ -308,15 +311,15 @@ body {
 
 .card__pieChart {
   position: relative;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   transform: translate(30%, 15%);
 }
 
 .card__info__chart .card__pieChart .number {
   position: absolute;
-  transform: translate(-15%, -15%);
+  transform: translate(-5%, -5%);
   left: 0;
   top: 0;
   height: 100%;
@@ -365,11 +368,11 @@ body {
 
 .table__title {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 .table {
-  font-size: 1.3rem;
+  font-size: 1rem;
   border-radius: 1rem;
   /* border-collapse: collapse; */
   width: 100%;
@@ -380,7 +383,7 @@ tbody.center {
 }
 
 thead tr th {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-bottom: 0.7rem;
 }
 
@@ -393,7 +396,7 @@ table.table tbody tr td {
   height: 2.8rem;
   border-bottom: 1px solid var(--color-light);
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-info-dark);
 }
 
@@ -426,6 +429,7 @@ table.table td.declined {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  flex: 1 auto;
 }
 
 .rightSidebar__recentUpdates {
@@ -469,6 +473,7 @@ table.table td.declined {
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  flex: 1 auto;
 }
 
 .salesAnalytics__item_icon {
@@ -529,4 +534,65 @@ table.table td.declined {
   font-weight: 700;
   color: var(--color-primary);
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .container__sidebar {
+    width: 7rem;
+    /* background-color: #41f1b6; */
+  }
+  .logo__text {
+    visibility: hidden;
+  }
+  .menu__items .menu__items--linkName span a {
+    visibility: hidden;
+  }
+  .container__dashboard {
+    left: 6rem;
+    width: calc(100% - 7rem);
+  }
+  table thead tr th:first-child {
+    display: none;
+  }
+
+  table tbody tr td:last-child,
+  table tbody tr td:first-child {
+    display: none;
+  }
+
+  @media (max-width: 550px) {
+    .header {
+      position: fixed;
+      background-color: var(--color-white);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      top: 0;
+      left: 0;
+      padding: 0.5rem;
+      width: 100%;
+    }
+    .header_title {
+      display: none;
+    }
+    .sidebar__logo {
+      display: none;
+    }
+    .container__sidebar {
+      width: 0;
+    }
+    .menu__items .menu__items--linkName {
+      display: none;
+    }
+
+    .container__dashboard {
+      left: 0;
+      width: 100%;
+    }
+    .header__hamburgerMenu.hidden {
+      visibility: visible;
+      cursor: pointer;
+    }
+    .dashboard__calendar {
+      margin-top: 7rem;
+    }
+  }
 }
