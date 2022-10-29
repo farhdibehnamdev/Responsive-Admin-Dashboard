@@ -253,10 +253,15 @@ body {
 }
 
 .card__info {
-  display: flex;
-  flex-direction: column;
   flex: 1 1 auto;
 }
+
+.card__info__chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .dashboard__cards .card {
   padding: 1.5rem 2rem 1.5rem 2rem;
   background-color: var(--color-white);
@@ -266,7 +271,6 @@ body {
   flex: 1 1 auto;
 }
 .card__info > * {
-  margin-bottom: 1.2rem;
   font-size: 1.5rem;
 }
 .card__info__icon i {
@@ -289,12 +293,12 @@ body {
 .card__info__text {
   font-weight: 700;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card__info__price {
   font-weight: 700;
   font-size: 1.7rem;
-  margin-bottom: 2rem;
 }
 .card__info__last24Hours {
   font-size: 0.6rem;
@@ -303,9 +307,50 @@ body {
 }
 
 .card__pieChart {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
-  background-color: var(--color-primary);
-  padding: 3rem;
+  transform: translate(30%, 15%);
+}
+
+.card__info__chart .card__pieChart .number {
+  position: absolute;
+  transform: translate(-15%, -15%);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__pieChart svg {
+  width: 7rem;
+  height: 7rem;
+}
+.card__pieChart svg circle {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 14;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.card__pieChart--sales svg circle {
+  stroke-dashoffset: -30;
+  stroke-dasharray: 215;
+}
+
+.card__pieChart--expenses svg circle {
+  stroke-dashoffset: 50;
+  stroke-dasharray: 100;
+}
+.card__pieChart--income svg circle {
+  stroke-dashoffset: 35;
+  stroke-dasharray: 110;
 }
 
 /* #### Table Section #### */
