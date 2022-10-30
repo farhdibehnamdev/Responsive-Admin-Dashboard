@@ -2,6 +2,9 @@
 const btnLight = document.querySelector(".btnLight");
 const btnDark = document.querySelector(".btnDark");
 const body = document.querySelector("body");
+const headerMenu = document.querySelector(".header__hamburgerMenu");
+const sidebar = document.querySelector(".container__sidebar");
+const closeMenu = document.querySelector(".sidebar__close");
 const themeHandler = function (type) {
   if (type === "light") {
     btnDark.classList.remove("btnDark--Clicked");
@@ -16,5 +19,11 @@ const themeHandler = function (type) {
   }
 };
 
+const sidebarHandler = function () {
+  sidebar.classList.toggle("open");
+};
+
 btnLight.addEventListener("click", () => themeHandler("light"));
 btnDark.addEventListener("click", () => themeHandler("dark"));
+headerMenu.addEventListener("click", () => sidebarHandler());
+closeMenu.addEventListener("click", () => sidebarHandler());
